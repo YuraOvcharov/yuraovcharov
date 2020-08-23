@@ -1,21 +1,19 @@
-import React from 'react';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import { ThemeProvider } from '@material-ui/core';
-import { unstable_createMuiStrictModeTheme } from '@material-ui/core/styles';
-import Containers from './containers';
+import React, { FC } from 'react'
+import CssBaseline from '@material-ui/core/CssBaseline'
+import { ThemeProvider } from '@material-ui/core'
+// eslint-disable-next-line camelcase
+import { unstable_createMuiStrictModeTheme } from '@material-ui/core/styles'
+import Containers from './containers'
 
+const theme = unstable_createMuiStrictModeTheme()
 
-const theme = unstable_createMuiStrictModeTheme();
-
-function App() {
-  return (
+const App: FC = () => (
     <>
-      <CssBaseline />
-      <ThemeProvider theme={theme}>
-        <Containers />
-      </ThemeProvider>
+        <CssBaseline />
+        <ThemeProvider theme={theme}>
+            <Containers />
+        </ThemeProvider>
     </>
-  );
-}
+)
 
-export default App;
+export default App

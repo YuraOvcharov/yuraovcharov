@@ -1,7 +1,6 @@
 import React, { FC } from 'react'
 import { AppBar, Toolbar, Typography } from '@material-ui/core'
 
-
 const Header: FC = () => (
     <AppBar position="relative">
         <Toolbar>

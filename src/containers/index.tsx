@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { FC } from 'react'
 import Header from './Header'
 import Routes from '../routes'
 
-
-const Containers = () => (
+const Containers: FC = () => (
     <>
         <Header />
         <Routes />
