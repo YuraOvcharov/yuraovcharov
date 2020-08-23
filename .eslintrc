@@ -1,0 +1,116 @@
+{
+    "extends": [
+        "airbnb",
+        "airbnb/hooks",
+        "plugin:react/recommended",
+        "plugin:import/typescript",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "react",
+        "react-hooks",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "import/no-extraneous-dependencies": 0,
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "max-len": [
+            "error",
+            {
+                "code": 120
+            }
+        ],
+        "array-element-newline": [
+            "error",
+            "consistent"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "no-nested-ternary": [
+            0
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "object-curly-newline": [
+            "error",
+            {
+                "consistent": true
+            }
+        ],
+        "operator-linebreak": [
+            "error",
+            "after",
+            {
+                "overrides": {
+                    "?": "before",
+                    ":": "before"
+                }
+            }
+        ],
+        "no-extra-parens": [
+            "error",
+            "all",
+            {
+                "enforceForArrowConditionals": false,
+                "ignoreJSX": "all"
+            }
+        ],
+        "@typescript-eslint/explicit-function-return-type": [
+            "off"
+        ],
+        "@typescript-eslint/explicit-member-accessibility": "off",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "react/jsx-filename-extension": [
+            "error",
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".tsx",
+                    ".ts"
+                ]
+            }
+        ],
+        "react/prop-types": [
+            0
+        ],
+        "react/jsx-indent": [
+            2,
+            4
+        ],
+        "react/jsx-wrap-multilines": [
+            0
+        ],
+        "react/jsx-closing-tag-location": [
+            0
+        ],
+        "react/jsx-indent-props": [
+            2,
+            4
+        ],
+        "react/display-name": [
+            0
+        ],
+        "react/jsx-props-no-spreading": [
+            0
+        ]
+    }
+}
